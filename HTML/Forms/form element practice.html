@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+<body>
+    <form>
+    <!-- input and label elements  -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- select element  -->
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+    <!-- size element  -->
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+        <!-- textarea element  -->
+        <label for="textarea1">Text area:</label>
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10">The cat was playing in the garden.
+        </textarea><br><br>
+        <!-- button element  -->
+        <button type="button" onclick="alert('Hello World')">Click me</button><br><br>
+        <!-- fieldset and legend element  -->
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+        <!-- datalist element  -->
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        
+    </form>
+       <!-- output element  -->
+       <form action="/action_page.php" oninput="x.value = parseInt(a.value)+parseInt(b.value)">
+            <input type="range" name="a" id="a" value="0">
+            +
+            <input type="number" name="b" id="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+    </form>
+
+
+</body>
+</html>
